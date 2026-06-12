@@ -21,5 +21,13 @@ IBM Telco Customer Churn — 7043 customers, 21 features
 1. Month-to-month customers churn at 42% vs 2.8% for two-year contracts
 2. (fill as you discover)
 
-## Target Companies
-AmEx, PhonePe, CRED, HDFC
+## API Deployment
+FastAPI service for real-time churn prediction.
+
+Run locally:
+cd api
+uvicorn main:app --reload
+
+Test at: http://127.0.0.1:8000/docs
+
+POST /predict - returns churn_probability and risk_category
